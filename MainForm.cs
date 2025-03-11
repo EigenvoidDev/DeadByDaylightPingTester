@@ -13,13 +13,16 @@ namespace DeadByDaylightPingTester
             "Asia Pacific (Hong Kong)",
             "Asia Pacific (Tokyo)",
             "Asia Pacific (Seoul)",
-            "Asia Pacific (Mumbai)",
             "Asia Pacific (Singapore)",
             "Asia Pacific (Sydney)",
+            "Canada (Central)",
             "Europe (Frankfurt)",
             "Europe (Ireland)",
+            "Europe (London)",
             "South America (São Paulo)",
             "US East (North Virginia)",
+            "US East (Ohio)",
+            "US West (North California)",
             "US West (Oregon)"
         };
         private Dictionary<string, string> regionToEndpointMapping;
@@ -72,16 +75,16 @@ namespace DeadByDaylightPingTester
                     "gamelift.ap-northeast-2.amazonaws.com"
                 },
                 {
-                    "Asia Pacific (Mumbai)",
-                    "gamelift.ap-south-1.amazonaws.com"
-                },
-                {
                     "Asia Pacific (Singapore)",
                     "gamelift.ap-southeast-1.amazonaws.com"
                 },
                 {
                     "Asia Pacific (Sydney)",
                     "gamelift.ap-southeast-2.amazonaws.com"
+                },
+                {
+                    "Canada (Central)",
+                    "gamelift.ca-central-1.amazonaws.com"
                 },
                 {
                     "Europe (Frankfurt)",
@@ -92,12 +95,24 @@ namespace DeadByDaylightPingTester
                     "gamelift.eu-west-1.amazonaws.com"
                 },
                 {
+                    "Europe (London)",
+                    "gamelift.eu-west-2.amazonaws.com"
+                },
+                {
                     "South America (São Paulo)",
                     "gamelift.sa-east-1.amazonaws.com"
                 },
                 {
                     "US East (North Virginia)",
                     "gamelift.us-east-1.amazonaws.com"
+                },
+                {
+                    "US East (Ohio)",
+                    "gamelift.us-east-2.amazonaws.com"
+                },
+                {
+                    "US West (North California)",
+                    "gamelift.us-west-1.amazonaws.com"
                 },
                 {
                     "US West (Oregon)",
@@ -109,7 +124,7 @@ namespace DeadByDaylightPingTester
         private void SetupUI()
         {
             this.Text = "Dead by Daylight Ping Tester";
-            this.Size = new Size(1000, 675);
+            this.Size = new Size(1000, 800);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
