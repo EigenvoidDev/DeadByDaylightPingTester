@@ -11,6 +11,7 @@ namespace DeadByDaylightPingTester
     {
         private string[] regions = {
             "Asia Pacific (Hong Kong)",
+            "Asia Pacific (Mumbai)",
             "Asia Pacific (Tokyo)",
             "Asia Pacific (Seoul)",
             "Asia Pacific (Singapore)",
@@ -65,6 +66,10 @@ namespace DeadByDaylightPingTester
                 {
                     "Asia Pacific (Hong Kong)",
                     "ec2.ap-east-1.amazonaws.com"
+                },
+                {
+                    "Asia Pacific (Mumbai)",
+                    "gamelift.ap-south-1.amazonaws.com"
                 },
                 {
                     "Asia Pacific (Tokyo)",
@@ -124,7 +129,7 @@ namespace DeadByDaylightPingTester
         private void SetupUI()
         {
             this.Text = "Dead by Daylight Ping Tester";
-            this.Size = new Size(1000, 800);
+            this.Size = new Size(1000, 850);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
